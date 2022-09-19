@@ -42,4 +42,9 @@ describe('creating fizzbuzz', () => {
       fn(32);
     }).not.toThrow();
   });
+
+  it('prints the digits from 1 to limit', () => {
+    const expected = [1, 2, 3, 4, 5, 6, 7];
+    expect(fn(7)).toEqual(expect.arrayContaining(expected));
+  });
 });
