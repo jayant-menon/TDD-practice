@@ -15,9 +15,14 @@ function fizzbuzz(limit) {
   for (let i = 1; i <= limit; i++) {
     if (i % 3 == 0) {
       arr.push('fizz');
-    } else {
-      arr.push(i);
+      continue;
     }
+    if (i % 5 == 0) {
+      arr.push('buzz');
+      continue;
+    }
+
+    arr.push(i);
   }
 
   return arr;
