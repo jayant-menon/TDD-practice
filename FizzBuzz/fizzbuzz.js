@@ -10,6 +10,13 @@ function fizzbuzz(limit) {
   if (limit < 1) {
     throw new Error('limit must be a positive integer');
   }
+
+  let arr = [];
+  for (let i = 1; i <= limit; i++) {
+    arr.push(i);
+  }
+
+  return arr;
 }
 
 module.exports = fizzbuzz;
