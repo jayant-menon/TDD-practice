@@ -14,4 +14,22 @@ describe('creating fizzbuzz', () => {
       fn(true);
     }).toThrow();
   });
+
+  it('takes only 1 argument', () => {
+    expect(() => {
+      fn('hello', 'world');
+    }).toThrow();
+
+    expect(() => {
+      fn();
+    }).toThrow();
+
+    expect(() => {
+      fn(32);
+    }).not.toThrow();
+
+    expect(() => {
+      fn(32, 33);
+    }).toThrow();
+  });
 });
