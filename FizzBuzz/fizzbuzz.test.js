@@ -32,4 +32,14 @@ describe('creating fizzbuzz', () => {
       fn(32, 33);
     }).toThrow();
   });
+
+  test('number is an integer', () => {
+    expect(() => {
+      fn(-32);
+    }).toThrow();
+
+    expect(() => {
+      fn(32);
+    }).not.toThrow();
+  });
 });
