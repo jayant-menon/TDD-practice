@@ -52,4 +52,9 @@ describe('creating fizzbuzz', () => {
     const expected = [1, 2, 'fizz'];
     expect(fn(3)).toEqual(expect.arrayContaining(expected));
   });
+
+  it('prints buzz correctly', () => {
+    const expected = [1, 2, 'fizz', 4, 'buzz'];
+    expect(fn(5)).toEqual(expect.arrayContaining(expected));
+  });
 });
