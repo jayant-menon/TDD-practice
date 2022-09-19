@@ -47,4 +47,9 @@ describe('creating fizzbuzz', () => {
     const expected = [1, 2, 3, 4, 5, 6, 7];
     expect(fn(7)).toEqual(expect.arrayContaining(expected));
   });
+
+  it('prints 3 correctly', () => {
+    const expected = [1, 2, 'fizz'];
+    expect(fn(3)).toEqual(expect.arrayContaining(expected));
+  });
 });
