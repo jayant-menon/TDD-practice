@@ -13,11 +13,16 @@ function fizzbuzz(limit) {
 
   let arr = [];
   for (let i = 1; i <= limit; i++) {
-    if (i % 3 == 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      arr.push('fizzbuzz');
+      continue;
+    }
+
+    if (i % 3 === 0) {
       arr.push('fizz');
       continue;
     }
-    if (i % 5 == 0) {
+    if (i % 5 === 0) {
       arr.push('buzz');
       continue;
     }
