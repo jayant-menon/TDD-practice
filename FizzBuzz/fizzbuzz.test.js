@@ -44,8 +44,8 @@ describe('creating fizzbuzz', () => {
   });
 
   it('prints the digits from 1 to limit', () => {
-    const expected = [1, 2, 3, 4, 5, 6, 7];
-    expect(fn(7)).toEqual(expect.arrayContaining(expected));
+    const expected = [1, 2];
+    expect(fn(2)).toEqual(expect.arrayContaining(expected));
   });
 
   it('prints 3 correctly', () => {

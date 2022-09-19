@@ -13,7 +13,11 @@ function fizzbuzz(limit) {
 
   let arr = [];
   for (let i = 1; i <= limit; i++) {
-    arr.push(i);
+    if (i % 3 == 0) {
+      arr.push('fizz');
+    } else {
+      arr.push(i);
+    }
   }
 
   return arr;
