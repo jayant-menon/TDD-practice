@@ -4,7 +4,7 @@ function removeDuplicates(arr) {
   }
 
   if (Array.isArray(arr) !== true) {
-    throw new Error('accepts one array as argument');
+    throw new Error('argument must be of type array');
   }
 }
 
