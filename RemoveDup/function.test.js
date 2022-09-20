@@ -1,6 +1,6 @@
 const fn = require('./function');
 
-describe('fn that removes duplicate numbers from an array', () => {
+describe('fn that removes duplicates from an array', () => {
   test('accepts 1 array as a parameter', () => {
     expect(() => {
       fn('hello');
@@ -21,5 +21,10 @@ describe('fn that removes duplicate numbers from an array', () => {
     expect(() => {
       fn([]);
     }).not.toThrow();
+  });
+
+  it('removes duplicates from an array', () => {
+    const expected = [1, 2, 3, 4];
+    expect(fn([1, 2, 3, 3, 4])).toBe(expect.arrayContaining(expected));
   });
 });
